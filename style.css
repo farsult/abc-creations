@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Karla";
+}
+
+a:visited,
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+
+@media (max-width: 640px){
+    
+    #aside, #arrow {
+        -ms-transform: scale(0.8, 0.8); /* IE 9 */
+        -webkit-transform: scale(0.8 ,0.8); /* Safari */
+        transform: scale(0.8, 0.8); /* Standard syntax */
+    }
+    
+    #aside {
+        top: 10%;
+        left: 18%;
+        bottom: 15%;
+    }
+    
+}
+
+@media (max-width: 540px){
+    
+    #aside, #arrow  {
+        -ms-transform: scale(0.6, 0.6); /* IE 9 */
+        -webkit-transform: scale(0.6 ,0.6); /* Safari */
+        transform: scale(0.6, 0.6); /* Standard syntax */
+    }
+    
+    #aside {
+        top: -16%;
+        left: 0;
+        bottom: 0;
+    }    
+    
+    h2 {
+        font-size: 22px;
+    }
+    
+    h4{
+        font-size: 15px
+    }
+    
+    #img-container {
+        -ms-transform: scale(1.3, 1.3); /* IE 9 */
+        -webkit-transform: scale(1.3 ,1.3); /* Safari */
+        transform: scale(1.3, 1.3); /* Standard syntax */
+    }
+}
+
+.first-header {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#grad{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: -webkit-linear-gradient(rgba(0, 29, 255, 0.17), rgb(0, 1, 11)); /* For Saf5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(0, 29, 255, 0.17), rgb(0, 1, 11)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(0, 29, 255, 0.17), rgb(0, 1, 11)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(0, 29, 255, 0.17), rgb(0, 1, 11)); /* Standard syntax (must be last) */
+    z-index: 1;
+}
+
+#img1 {
+    width: 100%;
+}
+
+#aside {
+    position: absolute;
+    width: 420px;
+    height: auto;
+    bottom: 32%;
+    right: 11%;
+    z-index: 2;
+    color: white;
+}
+
+#aside h1{
+    font-size: 49px;
+}
+
+#aside .button{
+    display: inline-block;
+    border: 2px solid white;
+    padding: 12px 46px;
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+}
+
+#aside .button:hover{
+    color: black;
+    background: white;
+}
+
+
+#aside .button.button-left{
+    margin-right: 10px;
+}
+
+@-webkit-keyframes bounce {
+    0% {bottom: 2%;}
+  100% {bottom: 4%;}
+}
+
+.first-header #arrow{
+    position: absolute;
+    bottom: 2%;
+    left: 48%;
+    z-index: 2;
+    color: white;
+    font-size: 46px;
+}
+
+.first-header #arrow:hover{
+    animation-name: bounce;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    z-index: 1000;
+}
+
+.navbar-header:after {
+    display: none;
+}
+
+.navbar-default{
+    background-color: white;
+    box-shadow: 0 1px 4px #e7e7e7;
+}
+
+.navbar-default .navbar-brand{
+    color: #0562b2;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+nav .menu{
+    font-size: 20px;
+    float: right;
+    padding: 11px 15px; 
+    clear: none;
+}
+
+nav .menu a{
+    color: #969696;
+}
+
+nav .menu a:hover{
+    color: dimgray;
+}
+
+.second-header {
+    position: relative;
+    padding-top: 10px ;
+    padding-bottom: 160px;
+}
+
+.second-header .main{
+    margin-top: 160px;
+}
+
+.second-header .main h2{
+    padding: 20px 0;
+    text-align: center;
+}
+
+.second-header .main #container #img-container{
+    position: relative;
+    margin-left: 15%;
+    margin-right: 15%;
+    opacity: 0;
+}
+
+.second-header .main #container #img-container #img2{
+    width: 100%;
+}
+
+
+.second-header .main #container #img-container #line-left{
+    position: absolute;
+    top: -8%;
+    left: 1%;
+    bottom: 32%;
+    right: 0;
+    border-left: 1px solid black;
+    -ms-transform: rotate(-23deg); /* IE 9 */
+    -webkit-transform: rotate(-23deg); /* Safari */
+    transform: rotate(-23deg);
+}
+
+.second-header .main #container #img-container #line-right{
+    position: absolute;
+    top: 32%;
+    left: 0;
+    bottom: -8%;
+    right: 1%;
+    border-right: 1px solid black;
+    -ms-transform: rotate(-23deg); /* IE 9 */
+    -webkit-transform: rotate(-23deg); /* Safari */
+    transform: rotate(-23deg);
+}
+
+.footer{
+    padding-bottom: 180px; 
+}
+
+.footer ul{
+    list-style-type: none;
+}
+
+.footer ul li{
+    text-align: center;
+}
